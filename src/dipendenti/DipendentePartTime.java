@@ -1,13 +1,22 @@
 package dipendenti;
 
-public class DipendentePartTime extends Dipendente {
-    int orelavorate;
+public class DipendentePartTime extends Dipendente implements Checked {
+    private int orelavorate;
+    private int inizioturno;
 
 
     public DipendentePartTime(Dipartimento dipartimento, double stipendio) {
         super(dipartimento, stipendio);
 
 
+    }
+
+    public int getInizioturno() {
+        return inizioturno;
+    }
+
+    public void setInizioturno(int inizioturno) {
+        this.inizioturno = inizioturno;
     }
 
     public void setOrelavorate(int orelavorate) {
@@ -21,4 +30,8 @@ public class DipendentePartTime extends Dipendente {
     }
 
 
+    @Override
+    public void checked() {
+        System.out.println("Ho iniziato il turno alle ore" + this.inizioturno);
+    }
 }
