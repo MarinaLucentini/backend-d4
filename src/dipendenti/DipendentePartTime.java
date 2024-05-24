@@ -7,8 +7,6 @@ public class DipendentePartTime extends Dipendente implements Checked {
 
     public DipendentePartTime(Dipartimento dipartimento, double stipendio) {
         super(dipartimento, stipendio);
-
-
     }
 
     public int getInizioturno() {
@@ -25,7 +23,6 @@ public class DipendentePartTime extends Dipendente implements Checked {
 
     @Override
     public double calculateSalary() {
-
         return this.orelavorate * this.getStipendio();
     }
 

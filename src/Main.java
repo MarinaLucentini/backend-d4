@@ -4,8 +4,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-
-
         DipendenteFullTime dipendente1 = new DipendenteFullTime(Dipartimento.PRODUZIONE, 1500.00);
         DipendentePartTime dipendente2 = new DipendentePartTime(Dipartimento.VENDITE, 10.00);
         Dirigente dipendente3 = new Dirigente(Dipartimento.AMMINISTRAZIONE, 2500);
